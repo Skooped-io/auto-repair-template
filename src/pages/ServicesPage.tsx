@@ -60,6 +60,9 @@ export default function ServicesPage() {
                         <Link to="/contact" className="shrink-0">
                           <Button>Schedule This Service</Button>
                         </Link>
+                        <Link to={`/services/${slugify(s.title)}`} className="shrink-0">
+                          <Button variant="outline">Learn More</Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
