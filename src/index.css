@@ -6,6 +6,11 @@
 
 @layer base {
   :root {
+    /* Brand colors — override these for white-labeling */
+    --color-primary: 0 76% 50%;       /* Red #DC2626 */
+    --color-secondary: 215 14% 30%;   /* Dark Steel #3D4F65 */
+    --color-accent: 38 92% 50%;       /* Amber #E89E0D */
+
     --background: 210 20% 98%;
     --foreground: 220 14% 10%;
 
