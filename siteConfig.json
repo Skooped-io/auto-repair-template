@@ -1,0 +1,171 @@
+{
+  "businessName": "Precision Auto",
+  "businessNameFull": "Precision Auto Repair",
+  "phone": "(555) 123-4567",
+  "phoneRaw": "5551234567",
+  "email": "info@precisionauto.com",
+  "address": {
+    "street": "1234 Main Street",
+    "city": "Springfield",
+    "state": "IL",
+    "zip": "62701",
+    "full": "1234 Main Street, Springfield, IL 62701"
+  },
+  "serviceArea": "Springfield and surrounding areas",
+  "industry": "Auto Repair",
+  "yearEstablished": "1998",
+  "licenseNumber": "",
+  "ownerName": "Mike Reeves",
+  "ownerInitials": "MR",
+  "ownerTitle": "Owner & Head Technician",
+  "ownerBio": "With over 30 years of hands-on experience, Mike still gets under the hood every day. ASE Master Technician certified, he leads by example and personally oversees every major repair that leaves the shop.",
+  "logoInitials": "PR",
+  "about": "When Mike Reeves opened Precision Auto in 1998, he had one simple rule: treat every customer like a neighbor. Twenty-five years later, that philosophy hasn't changed.",
+  "aboutExtended": "What started as a two-bay garage has grown into a full-service repair facility — but we've never lost that small-shop feel. We explain every repair in plain English, show you the old parts, and never push services you don't need.",
+  "aboutCredentials": "We're proud to be ASE-certified, BBB-accredited, and trusted by over 5,000 families in the Springfield area.",
+  "tagline": "Honest service. Expert repairs. Serving the community since 1998 with transparent pricing and certified mechanics.",
+  "hours": {
+    "weekdays": { "label": "Mon – Fri", "hours": "7:30 AM – 6:00 PM" },
+    "saturday": { "label": "Saturday", "hours": "8:00 AM – 3:00 PM" },
+    "sunday": { "label": "Sunday", "hours": "Closed" }
+  },
+  "trustBadges": [
+    { "title": "ASE Certified", "desc": "All technicians are ASE certified professionals" },
+    { "title": "Transparent Pricing", "desc": "Upfront quotes — no hidden fees, ever" },
+    { "title": "Warranty on All Work", "desc": "12-month / 12,000-mile warranty standard" },
+    { "title": "Family-Owned Since 1998", "desc": "Over 25 years serving the community" }
+  ],
+  "values": [
+    { "title": "Honesty First", "desc": "We'll never recommend a repair you don't need. Period." },
+    { "title": "Expert Technicians", "desc": "ASE certified with ongoing training on the latest vehicles." },
+    { "title": "Community Roots", "desc": "Proud sponsor of local teams, charity drives, and school programs." },
+    { "title": "Family Values", "desc": "We treat your car — and your family — the way we treat our own." }
+  ],
+  "pricing": [
+    { "service": "Oil Change", "price": "From $39.99" },
+    { "service": "Brake Pads", "price": "From $149.99" },
+    { "service": "Diagnostics", "price": "Free with Repair" }
+  ],
+  "reviews": [
+    { "name": "Maria Gonzalez", "text": "Took my car in for a weird noise — they found the issue fast, explained everything, and didn't charge me for anything I didn't need. Rare find!", "stars": 5 },
+    { "name": "David Park", "text": "Best prices in town and they actually show you the old parts. Been coming here for 3 years now with both our family cars.", "stars": 5 },
+    { "name": "Lisa Thompson", "text": "They squeezed me in same-day when my brakes started grinding. Fixed it in under 2 hours. Lifesavers!", "stars": 5 },
+    { "name": "James Walker", "text": "Honest mechanics are hard to find. These guys quoted me $400 less than the dealership for the same work. Will never go anywhere else.", "stars": 5 }
+  ],
+  "reviewRating": "4.9",
+  "reviewSource": "Google",
+  "services": [
+    {
+      "title": "Oil Change",
+      "desc": "Full synthetic & conventional options",
+      "descFull": "Keep your engine running smoothly with regular oil changes. We offer conventional, synthetic blend, and full synthetic options.",
+      "includes": ["Up to 5 quarts of oil", "New oil filter", "Multi-point inspection", "Fluid top-off"],
+      "price": "From $39.99",
+      "warning": "Dashboard oil light on? Overdue for a change? Don't wait — old oil causes engine wear.",
+      "icon": "Droplets"
+    },
+    {
+      "title": "Brake Repair",
+      "desc": "Pads, rotors, and full brake service",
+      "descFull": "Your brakes are the most important safety system on your vehicle. We inspect, repair, and replace brake components to keep you safe.",
+      "includes": ["Brake pad replacement", "Rotor resurfacing or replacement", "Brake fluid flush", "Caliper inspection"],
+      "price": "From $149.99",
+      "warning": "Squealing, grinding, or soft brake pedal? Get your brakes checked immediately.",
+      "icon": "Disc3"
+    },
+    {
+      "title": "Engine Diagnostics",
+      "desc": "Computer diagnostics & troubleshooting",
+      "descFull": "Check engine light on? We use advanced diagnostic equipment to pinpoint the exact issue and give you a clear explanation.",
+      "includes": ["Computer code scan", "Full diagnostic report", "Clear explanation of findings", "Written repair estimate"],
+      "price": "Free with Repair",
+      "warning": "A check engine light can mean anything from a loose gas cap to a serious engine problem.",
+      "icon": "Cpu"
+    },
+    {
+      "title": "Transmission",
+      "desc": "Fluid service, repair & rebuild",
+      "descFull": "Protect one of the most expensive components in your vehicle with regular transmission maintenance.",
+      "includes": ["Fluid change or flush", "Filter replacement", "Leak inspection", "Road test"],
+      "price": "From $179.99",
+      "warning": "Slipping gears, delayed shifts, or burning smell? Your transmission needs attention.",
+      "icon": "Cog"
+    },
+    {
+      "title": "A/C Service",
+      "desc": "Recharge, repair & full system check",
+      "descFull": "Stay cool with our complete A/C diagnostics and repair services.",
+      "includes": ["Refrigerant recharge", "Leak detection", "Compressor check", "Cabin filter replacement"],
+      "price": "From $89.99",
+      "warning": "Blowing warm air? Weak airflow? Your A/C system may have a leak.",
+      "icon": "Snowflake"
+    },
+    {
+      "title": "Tire Service",
+      "desc": "Rotation, balance, alignment & more",
+      "descFull": "Maximize tire life and improve safety with proper tire maintenance.",
+      "includes": ["Tire rotation", "Wheel balancing", "Alignment check", "Tire pressure adjustment"],
+      "price": "From $29.99",
+      "warning": "Uneven wear, pulling to one side, or vibration at speed? Time for tire service.",
+      "icon": "CircleDot"
+    },
+    {
+      "title": "Electrical",
+      "desc": "Battery, alternator, starters & wiring",
+      "descFull": "Modern vehicles rely heavily on electrical systems. We diagnose and repair all electrical issues.",
+      "includes": ["Battery testing & replacement", "Alternator & starter repair", "Wiring diagnostics", "Light & fuse replacement"],
+      "price": "From $49.99",
+      "warning": "Dim lights, slow cranking, or dead battery? Your electrical system needs attention.",
+      "icon": "Zap"
+    },
+    {
+      "title": "Inspections",
+      "desc": "State inspections & multi-point checks",
+      "descFull": "Stay safe and road-legal with thorough vehicle inspections.",
+      "includes": ["State safety inspection", "Emissions testing", "Pre-purchase inspection", "Multi-point check"],
+      "price": "From $29.99",
+      "warning": "Buying a used car? A pre-purchase inspection can save you thousands.",
+      "icon": "FileCheck"
+    }
+  ],
+  "specials": [
+    { "title": "$10 Off Any Oil Change", "desc": "Conventional or full synthetic. No appointment needed.", "code": "OIL10", "expires": "Valid through March 2026" },
+    { "title": "Free Brake Inspection", "desc": "Complete brake system check — pads, rotors, fluid, and more.", "code": "BRAKES", "expires": "No expiration" },
+    { "title": "10% Off Your First Visit", "desc": "New customer? Welcome! Take 10% off any service.", "code": "WELCOME10", "expires": "First-time customers only" },
+    { "title": "$25 Off A/C Recharge", "desc": "Stay cool this summer with a full A/C recharge and leak check.", "code": "COOL25", "expires": "Seasonal — while supplies last" },
+    { "title": "Free Tire Rotation", "desc": "With any oil change service. Keep your tires wearing evenly.", "code": "TIRES", "expires": "Valid through March 2026" },
+    { "title": "15% Off Engine Diagnostics", "desc": "Check engine light on? Let us find the problem at a discount.", "code": "DIAG15", "expires": "Valid through March 2026" }
+  ],
+  "contactFormServices": [
+    "Oil Change", "Brake Repair", "Engine Diagnostics", "Transmission Service",
+    "A/C Service", "Tire Service", "Electrical", "Inspection", "Other"
+  ],
+  "seo": {
+    "home": {
+      "title": "Precision Auto | Auto Repair in Springfield, IL",
+      "description": "Honest, affordable auto repair in Springfield, IL. ASE-certified mechanics, transparent pricing, and same-day service. Call (555) 123-4567.",
+      "h1": "Honest Service. Expert Repairs."
+    },
+    "about": {
+      "title": "About Precision Auto | Springfield, IL",
+      "description": "Family-owned since 1998, Precision Auto provides honest, expert auto repair in Springfield, IL. ASE-certified technicians and transparent pricing."
+    },
+    "services": {
+      "title": "Auto Repair Services | Precision Auto",
+      "description": "Full-service auto repair: oil changes, brakes, engine diagnostics, transmission, A/C, tires, electrical, and inspections. Transparent pricing in Springfield, IL."
+    },
+    "specials": {
+      "title": "Coupons & Specials | Precision Auto",
+      "description": "Save on auto repair with current specials and coupons from Precision Auto in Springfield, IL."
+    },
+    "contact": {
+      "title": "Contact Precision Auto | Springfield, IL",
+      "description": "Schedule a service or contact Precision Auto in Springfield, IL. Call (555) 123-4567 or submit a request online."
+    }
+  },
+  "branding": {
+    "primaryColor": "#DC2626",
+    "secondaryColor": "#3D4F65",
+    "accentColor": "#E89E0D"
+  }
+}
