@@ -8,6 +8,7 @@ import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import SpecialsPage from "./pages/SpecialsPage";
 import ContactPage from "./pages/ContactPage";
+import ServiceDetail from "./pages/ServiceDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
