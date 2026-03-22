@@ -38,7 +38,9 @@ export default function ServicesPage() {
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-3">
-                        <h2 className="font-heading text-2xl font-bold">{s.title}</h2>
+                        <Link to={`/services/${slugify(s.title)}`} className="hover:text-primary transition-colors">
+                          <h2 className="font-heading text-2xl font-bold">{s.title}</h2>
+                        </Link>
                         <span className="font-heading text-xl font-bold text-primary">{s.price}</span>
                       </div>
                       <p className="text-foreground/80 mb-4">{s.descFull}</p>
