@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SeoHead } from "@/components/SeoHead";
-import { seoConfig } from "@/lib/config";
+import { seoConfig, slugify } from "@/lib/config";
 import { Button } from "@/components/ui/button";
 import { Droplets, Disc3, Cpu, Cog, Snowflake, CircleDot, Zap, FileCheck, AlertTriangle } from "lucide-react";
 
