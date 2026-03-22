@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Phone, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { seoConfig } from "@/lib/config";
 
 const links = [
   { to: "/", label: "Home" },
@@ -14,16 +15,17 @@ const links = [
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
+  const cfg = seoConfig;
 
   return (
     <nav className="sticky top-0 z-50 bg-secondary shadow-lg">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-sm">PR</span>
+            <span className="text-primary-foreground font-heading font-bold text-sm">{cfg.logoInitials}</span>
           </div>
           <span className="font-heading text-xl font-bold text-secondary-foreground tracking-tight">
-            Precision Auto
+            {cfg.businessName}
           </span>
         </Link>
 
@@ -43,9 +45,9 @@ export function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="tel:5551234567" className="flex items-center gap-1.5 text-secondary-foreground/90 text-sm font-semibold">
+          <a href={`tel:${cfg.phoneRaw}`} className="flex items-center gap-1.5 text-secondary-foreground/90 text-sm font-semibold">
             <Phone className="w-4 h-4" />
-            (555) 123-4567
+            {cfg.phone}
           </a>
           <Link to="/contact">
             <Button size="default">Schedule Service</Button>
@@ -74,9 +76,9 @@ export function Navbar() {
             </Link>
           ))}
           <div className="px-6 pt-2 flex flex-col gap-2">
-            <a href="tel:5551234567" className="flex items-center gap-1.5 text-secondary-foreground/90 text-sm font-semibold">
+            <a href={`tel:${cfg.phoneRaw}`} className="flex items-center gap-1.5 text-secondary-foreground/90 text-sm font-semibold">
               <Phone className="w-4 h-4" />
-              (555) 123-4567
+              {cfg.phone}
             </a>
             <Link to="/contact" onClick={() => setOpen(false)}>
               <Button className="w-full">Schedule Service</Button>

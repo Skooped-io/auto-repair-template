@@ -1,19 +1,15 @@
 import { Layout } from "@/components/Layout";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { SeoHead } from "@/components/SeoHead";
+import { seoConfig } from "@/lib/config";
 import { Tag } from "lucide-react";
 
-const specials = [
-  { title: "$10 Off Any Oil Change", desc: "Conventional or full synthetic. No appointment needed.", code: "OIL10", expires: "Valid through March 2026" },
-  { title: "Free Brake Inspection", desc: "Complete brake system check — pads, rotors, fluid, and more.", code: "BRAKES", expires: "No expiration" },
-  { title: "10% Off Your First Visit", desc: "New customer? Welcome! Take 10% off any service.", code: "WELCOME10", expires: "First-time customers only" },
-  { title: "$25 Off A/C Recharge", desc: "Stay cool this summer with a full A/C recharge and leak check.", code: "COOL25", expires: "Seasonal — while supplies last" },
-  { title: "Free Tire Rotation", desc: "With any oil change service. Keep your tires wearing evenly.", code: "TIRES", expires: "Valid through March 2026" },
-  { title: "15% Off Engine Diagnostics", desc: "Check engine light on? Let us find the problem at a discount.", code: "DIAG15", expires: "Valid through March 2026" },
-];
-
 export default function SpecialsPage() {
+  const cfg = seoConfig;
+
   return (
     <Layout>
+      <SeoHead page="specials" />
       <section className="bg-secondary py-20">
         <div className="container">
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-secondary-foreground animate-fade-up">
@@ -28,7 +24,7 @@ export default function SpecialsPage() {
       <section className="py-16 bg-background">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {specials.map((s, i) => (
+            {cfg.specials.map((s, i) => (
               <ScrollReveal key={s.code} delay={i * 80}>
                 <div className="bg-card rounded-lg border-2 border-dashed border-primary/25 p-6 h-full flex flex-col hover:border-primary/50 transition-colors">
                   <div className="flex items-center gap-2 mb-3">

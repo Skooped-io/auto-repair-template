@@ -1,16 +1,14 @@
 import { useState } from "react";
 import { Layout } from "@/components/Layout";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { SeoHead } from "@/components/SeoHead";
+import { seoConfig } from "@/lib/config";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock, Car } from "lucide-react";
 
-const serviceOptions = [
-  "Oil Change", "Brake Repair", "Engine Diagnostics", "Transmission Service",
-  "A/C Service", "Tire Service", "Electrical", "Inspection", "Other",
-];
-
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const cfg = seoConfig;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,6 +17,7 @@ export default function ContactPage() {
 
   return (
     <Layout>
+      <SeoHead page="contact" />
       <section className="bg-secondary py-20">
         <div className="container">
           <h1 className="font-heading text-4xl md:text-5xl font-bold text-secondary-foreground animate-fade-up">
@@ -81,7 +80,7 @@ export default function ContactPage() {
                           <label className="text-sm font-semibold mb-1.5 block">Service Needed *</label>
                           <select required className="w-full rounded-lg border border-input bg-background px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-ring">
                             <option value="">Select a service</option>
-                            {serviceOptions.map((o) => (
+                            {cfg.contactFormServices.map((o) => (
                               <option key={o} value={o}>{o}</option>
                             ))}
                           </select>
@@ -112,15 +111,15 @@ export default function ContactPage() {
                   <ul className="space-y-4 text-sm">
                     <li className="flex items-start gap-3">
                       <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
-                      <span>1234 Main Street<br />Springfield, IL 62701</span>
+                      <span>{cfg.address.street}<br />{cfg.address.city}, {cfg.address.state} {cfg.address.zip}</span>
                     </li>
                     <li className="flex items-center gap-3">
                       <Phone className="w-5 h-5 text-primary shrink-0" />
-                      <a href="tel:5551234567" className="hover:text-primary transition-colors font-semibold">(555) 123-4567</a>
+                      <a href={`tel:${cfg.phoneRaw}`} className="hover:text-primary transition-colors font-semibold">{cfg.phone}</a>
                     </li>
                     <li className="flex items-center gap-3">
                       <Mail className="w-5 h-5 text-primary shrink-0" />
-                      <a href="mailto:info@precisionauto.com" className="hover:text-primary transition-colors">info@precisionauto.com</a>
+                      <a href={`mailto:${cfg.email}`} className="hover:text-primary transition-colors">{cfg.email}</a>
                     </li>
                   </ul>
                 </div>
@@ -132,12 +131,12 @@ export default function ContactPage() {
                     <Clock className="w-5 h-5 text-primary" /> Hours
                   </h3>
                   <ul className="space-y-2 text-sm">
-                    <li className="flex justify-between"><span>Mon – Fri</span><span className="font-semibold">7:30 AM – 6:00 PM</span></li>
+                    <li className="flex justify-between"><span>{cfg.hours.weekdays.label}</span><span className="font-semibold">{cfg.hours.weekdays.hours}</span></li>
                     <li className="flex justify-between items-center">
-                      <span>Saturday</span>
-                      <span className="bg-accent/20 text-accent-foreground text-xs font-semibold px-2 py-0.5 rounded">8:00 AM – 3:00 PM</span>
+                      <span>{cfg.hours.saturday.label}</span>
+                      <span className="bg-accent/20 text-accent-foreground text-xs font-semibold px-2 py-0.5 rounded">{cfg.hours.saturday.hours}</span>
                     </li>
-                    <li className="flex justify-between"><span>Sunday</span><span>Closed</span></li>
+                    <li className="flex justify-between"><span>{cfg.hours.sunday.label}</span><span>{cfg.hours.sunday.hours}</span></li>
                   </ul>
                 </div>
               </ScrollReveal>
